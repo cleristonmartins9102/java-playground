@@ -27,6 +27,10 @@ public class App
 
         nomes.remove("Martina");
 
+        if (nomes.contains("Ana")) {
+            System.out.println("Lista contém Ana");
+        }
+
         System.out.println("Tamanho: " + nomes.size());
     }
 }

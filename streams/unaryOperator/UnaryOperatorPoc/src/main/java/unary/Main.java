@@ -16,5 +16,9 @@ public class Main {
 
         System.out.println("Saler Bonus: " + calcSalerBonus.apply(1000.00));
         System.out.println("Saler VAT: " + result.apply(1000.00));
+
+        Function<Double, Double> result2 = calcSalerBonus.compose(calcSalerBonusVat);
+        System.out.println(result2.apply(10.00));
+
     }
 }

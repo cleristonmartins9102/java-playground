@@ -21,5 +21,7 @@ public class Main {
         System.out.println(result2.apply(10.00));
         System.out.println("VAT: " + result.apply(1000.00));
 
+        UnaryOperator<String> value = v -> v;
+        System.out.println(value.identity());
     }
 }

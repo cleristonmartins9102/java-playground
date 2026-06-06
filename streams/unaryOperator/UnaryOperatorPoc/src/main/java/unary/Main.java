@@ -19,6 +19,7 @@ public class Main {
 
         Function<Double, Double> result2 = calcSalerBonus.compose(calcSalerBonusVat);
         System.out.println(result2.apply(10.00));
+        System.out.println("VAT: " + result.apply(1000.00));
 
     }
 }

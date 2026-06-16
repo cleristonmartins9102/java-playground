@@ -22,6 +22,7 @@ public class Main {
         System.out.println("VAT: " + result.apply(1000.00));
 
         UnaryOperator<String> value = v -> v;
-        System.out.println(value.identity());
+        System.out.println(value.identity(
+                GIT_COMMITTER_DATE="2026-06-04 10:33:11 -0300" git commit --amend --no-edit --date="2026-06-05 23:00:00 -0300"));
     }
 }
